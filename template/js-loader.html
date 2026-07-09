@@ -1,0 +1,68 @@
+<!-- Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="res/js/jquery-1.11.1.min.js"></script> -->
+    <script type="text/javascript" src="res/js/jquery.noconflict.js"></script>
+    <script type="text/javascript" src="res/js/modernizr.2.7.1.min.js"></script>
+    <script type="text/javascript" src="res/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="res/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="res/js/jquery-ui.1.10.4.min.js"></script>
+    
+    <!-- Twitter Bootstrap -->
+    <script type="text/javascript" src="res/js/bootstrap.js"></script>
+    
+    <!-- load revolution slider scripts -->
+    <script type="text/javascript" src="res/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="res/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Flex Slider -->
+    <script type="text/javascript" src="res/components/flexslider/jquery.flexslider-min.js"></script>
+    
+    <!-- load BXSlider scripts -->
+    <script type="text/javascript" src="res/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+    
+    <!-- parallax -->
+    <script type="text/javascript" src="res/js/jquery.stellar.min.js"></script>
+    
+    <!-- waypoint -->
+    <script type="text/javascript" src="res/js/waypoints.min.js"></script>
+
+    <!-- load page Javascript -->
+    <script type="text/javascript" src="res/js/theme-scripts.js"></script>
+    <script type="text/javascript" src="res/js/scripts.js"></script>
+    <script type="text/javascript">
+        function listTransCities(country){
+            var data = { 'country' : country};
+            jQuery.ajax({type: 'POST', url : 'ajax/list-cities.php?for=transfer',dataType:"json", data: data,
+                success: function(data){
+                    select = document.getElementById('transfer_city');
+                    for ( i = 0; i < data.length; i += 1 ) {
+                        option = document.createElement( 'option' );
+                        option.value = option.text = data[i];
+                        select.add( option );
+                    }
+                }
+            })
+        }
+    </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59e82986c28eca75e4626e0b/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!--Start of AI Travel Assist-->
+<script type="text/javascript" src="ai_assist/widget.js"></script>
+<!--End of AI Travel Assist-->
+
+<!--Start of AI Travel Assist-->
+<!--<script type="text/javascript" src="../ai_assist/chat2.js"></script>-->
+<!--End of AI Travel Assist-->

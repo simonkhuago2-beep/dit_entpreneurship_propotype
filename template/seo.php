@@ -1,0 +1,4 @@
+<meta name="description" content="TravelAfric.com provides a one-stop-shop to book your accommodation, airport transfers, rent-a-car, book excursions, tours, tours guide and buy event tickets in Africa. Planning to your trip or vacation to anywhere in Africa is made more secured, seamless, complete and well connected as never before on one single platform">
+<meta name="Travelafric.com" content="Travelafric.com">
+<meta name="keywords" content="Travel Africa, Travel Afriq, Travel Afric, Travel to South Africa, Travel to Tanzania, Travel Kenya, Travel to Ghana, Travel to Ethiopia, Travel to Nigeria, Safari, Africa, Hotels in Africa, Rent-A-Car in Accra, Vacation in Africa, Event Tickets, Tours Guides, Airport Transfers in Ghana,
+Airport Transfers in Addis Ababa, Airport Transfer in Johannesburg, Airport Transfer in Nairobi, Airport Transfer in Dar Es Salaam, Airport Transfer in Zanzibar">
