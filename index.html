@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Images</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #66a8d9;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #66a8d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #4a86b8;
+}
+
+input[type="file"]::-webkit-file-upload-button:active {
+    background-color: #34719e;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Select Images and Store Data</h1>
+    <input type="file" id="file-input1" accept="image/jpeg, image/png">
+    <input type="file" id="file-input2" accept="image/jpeg, image/png">
+    <input type="file" id="file-input3" accept="image/jpeg, image/png">
+
+    <script>
+        function storeImageData(imageSrc, section) {
+    localStorage.setItem(`imageSrc${section}`, imageSrc);
+}
+
+function handleFileUpload(inputId, section) {
+    var fileInput = document.getElementById(inputId);
+    fileInput.addEventListener('change', function() {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var imageSrc = e.target.result;
+                storeImageData(imageSrc, section);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+}
+
+handleFileUpload('file-input1', 1);
+handleFileUpload('file-input2', 2);
+handleFileUpload('file-input3', 3);
+
+    </script>
+</body>
+</html>
