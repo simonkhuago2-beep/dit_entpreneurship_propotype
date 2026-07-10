@@ -257,7 +257,7 @@ document.getElementById('decline-cookies').addEventListener('click', function() 
                         <a id="back-to-top" href="#" class="animated" data-animation-type="bounce"><i class="soap-icon-longarrow-up circle"></i></a>
                     </div>
                     <div class="copyright pull-right">
-                        <p>&copy; 2016 Travelafric.com</p>
+                        <p>&copy; 2026 Travelafric.com</p>
                     </div>
                 </div>
             </div>
